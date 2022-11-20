@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nihon No Shokudo</title>
+
+    <link rel="stylesheet" href="assets/style.css" />
+
+    <!-- Sirve para agregar el ícono de nuestra página -->
+    <link rel="icon" href="" />
+
+    <!-- AGREGAMOS CDN DE FONT-AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="overlay hidden"></div>
+
+    <main>
+      <!-- Header -->
+      <header>
+        <div class="navbar">
+          <h1>Nihon No Shokudo</h1>
+          <div class="linksContainer">
+            <ul class="standardList">
+              <li><a href="index.html" class="heroLink" id="home">Home</a></li>
+              <li>
+                <a href="shop.html" class="heroLink" id="shop"
+                  >Order Delivery</a
+                >
+              </li>
+              <li>
+                <a href="index.html#contactSection" class="heroLink">Contact</a>
+              </li>
+              <li><a href="signUp.html" class="heroLink">Sign Up</a></li>
+              <li><a href="logIn.html" class="heroLink">Log In</a></li>
+            </ul>
+            <div class="cartButton">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <div class="barsMenuButton">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- Cart -->
+
+      <div class="cart hidden">
+        <div class="closeCartBtn">
+          <i class="fa-solid fa-circle-xmark"></i>
+        </div>
+        <h2>Your Cart</h2>
+        <div class="cartContainer"></div>
+        <div class="cartTotal">
+          <p>Total</p>
+          <p class="cartTotalAmount">$20</p>
+        </div>
+        <div class="cartButtons">
+          <button class="buy-btn button">Buy</button>
+          <button class="delete-btn button">Empty Cart</button>
+        </div>
+      </div>
+
+      <!-- Hamburguer Menu -->
+      <div class="barsMenu hidden">
+        <div class="closeMenuBtn">
+          <i class="fa-solid fa-circle-xmark"></i>
+        </div>
+        <img
+          class="barsMenuImg"
+          src="/assets/imgs/Japan-Torii-Gate-Background-PNG-Image.png"
+          alt="barsMenu picture"
+        />
+        <div class="linksContainer linksBarsMenu">
+          <ul class="standardList standardListMenu">
+            <li>
+              <a href="index.html" class="heroLink" id="home">Home</a>
+            </li>
+            <li>
+              <a href="shop.html" class="heroLink" id="shop">Order Delivery</a>
+            </li>
+            <li class="contactLink">
+              <a href="index.html#contactSection" class="heroLink">Contact</a>
+            </li>
+            <li><a href="signUp.html" class="heroLink">Sign Up</a></li>
+            <li><a href="logIn.html" class="heroLink">Log In</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Modal -->
+
+      <div class="modal hidden"></div>
+
+      <!-- Hero -->
+      <section class="section-hero">
+        <h2>
+          Authentic Japanese cuisine, made for all Japan lovers and those who
+          want to meet their exotic flavours
+        </h2>
+      </section>
+
+      <!-- Links e Iconos a las Redes Sociales -->
+      <section class="section-hero">
+        <a href="#" class="heroLink">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="#" class="heroLink">
+          <i class="fa-brands fa-square-facebook"></i>
+        </a>
+        <a href="#" class="heroLink">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+      </section>
+    </main>
+
+    <!-- About Us -->
+    <section class="section-container section-about">
+      <img
+        src="https://rokaakor.com/wp-content/uploads/2019/01/Group-of-people-eating-sushi-768x512.jpg"
+        class="homeImg"
+        alt="ramen-ejemplo"
+      />
+      <div class="aboutText">
+        <h3>Sharing our love for food</h3>
+        <p>
+          We created this company in our search of sharing something we are very
+          passionate about: Food. We believe that sharing food with those you
+          love is not only a duty, but also a pleasure and we love to help on
+          allowing you to do so.
+        </p>
+        <a href="signUp.html">
+          <button class="button btn-learnStory">Join us Now</button>
+        </a>
+      </div>
+    </section>
+
+    <section class="section-container section-about second-about">
+      <div class="aboutText">
+        <h3>Japanese and other asian original recipes</h3>
+        <p>
+          Have you ever wanted to try the famous Ramen? Or maybe, you are a big
+          fan of sushi. We have a bit of everything! Order now and discover not
+          only japanese dishes, but also some other asian all-time classics!
+        </p>
+        <a href="shop.html">
+          <button class="button btn-openMenu">See Full Menu</button>
+        </a>
+      </div>
+      <img
+        src="https://images.hola.com/imagenes/cocina/recetas/20191017151958/ramen-pollo-huevo-cebollino-soja/0-734-730/ramen-adobe-m.jpg"
+        class="homeImg"
+        alt="ramen-ejemplo"
+      />
+    </section>
+
+    <!-- Favorites -->
+    <section class="section-container">
+      <div class="section-favorites">
+        <h3 class="section-title">Fan-Favorites Dishes</h3>
+        <div class="section-recommendation">
+          <div class="recommendationContainer">
+            <img src="assets/imgs/productsImg/kaniRamen.avif" alt="" />
+            <div class="datosProdContainer">
+              <div class="datosProd">
+                <h4 class="nameFood">Tonkatsu Ramen</h4>
+                <h4 class="priceFood">$10</h4>
+              </div>
+              <p>
+                Ginza Pho is based on a family recipe that's been handed down
+                for generations. It's a spicy, light and aromatic noodle soup.
+              </p>
+            </div>
+          </div>
+          <div class="recommendationContainer">
+            <img src="assets/imgs/productsImg/vegetablePho.avif" alt="" />
+            <div class="datosProdContainer">
+              <div class="datosProd">
+                <h4 class="nameFood">Vegetable Pho</h4>
+                <h4 class="priceFood">$10</h4>
+              </div>
+              <p>
+                Our bespoke ramen comes with handmade noodles, a wide array of
+                toppings to choose from and homemade broth.
+              </p>
+            </div>
+          </div>
+        </div>
+        <a href="shop.html">
+          <button class="button">See Full Menu</button>
+        </a>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section-container section-contact" id="contactSection">
+      <h3 class="section-title">Come visit us!</h3>
+      <div class="contactDetailsContainer">
+        <div class="contactDetails">
+          <h4><i class="fa-solid fa-map"></i> Adolfo Alsina 429, CABA</h4>
+          <h4><i class="fa-brands fa-square-whatsapp"></i> 11-3422-1122</h4>
+          <h4><i class="fa-solid fa-phone"></i> 4444-7777</h4>
+          <h4><i class="fa-solid fa-envelope"></i> nshokudo@gmail.com</h4>
+          <h4>
+            <i class="fa-solid fa-business-time"></i> Every day from 11 to 23.
+          </h4>
+        </div>
+        <div class="imgContactContainer">
+          <img
+            src="assets/imgs/D85_0431_HDR.jpeg"
+            class="homeImg"
+            alt="restaurant pic"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footerContainer">
+        <div class="container2">
+          <h3 class="section-title">日本の食堂</h3>
+          <div class="footerLinksContainer">
+            <a href="#" class="heroLink">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="#" class="heroLink">
+              <i class="fa-brands fa-square-facebook"></i>
+            </a>
+            <a href="#" class="heroLink">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+        <div class="footerLinksContainer otherLinks">
+          <a href="#" class="heroLink">Terms of Use</a>
+          <a href="#" class="heroLink">Suggestions</a>
+          <a href="#" class="heroLink">Japanese Stores</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/data.js"></script>
+    <script src="assets/utils.js"></script>
+    <script src="assets/main.js"></script>
+  </body>
+</html>

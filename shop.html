@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nihon No Shokudo</title>
+
+    <link rel="stylesheet" href="assets/style.css" />
+
+    <!-- Sirve para agregar el ícono de nuestra página -->
+    <link rel="icon" href="" />
+
+    <!-- AGREGAMOS CDN DE FONT-AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="bodyShop">
+    <main class="main mainMenu">
+      <!-- Header -->
+      <header>
+        <div class="navbar">
+          <h1>Nihon No Shokudo</h1>
+          <div class="linksContainer">
+            <ul class="standardList">
+              <li><a href="index.html" class="heroLink" id="home">Home</a></li>
+              <li>
+                <a href="shop.html" class="heroLink" id="shop"
+                  >Order Delivery</a
+                >
+              </li>
+              <li class="contactLink">
+                <a href="index.html#contactSection" class="heroLink">Contact</a>
+              </li>
+              <li><a href="signUp.html" class="heroLink">Sign Up</a></li>
+              <li><a href="logIn.html" class="heroLink">Log In</a></li>
+            </ul>
+            <div class="cartButton">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <div class="barsMenuButton">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- Cart -->
+
+      <div class="cart hidden">
+        <div class="closeCartBtn">
+          <i class="fa-solid fa-circle-xmark"></i>
+        </div>
+        <h2>Your Cart</h2>
+        <div class="cartContainer"></div>
+        <div class="cartTotal">
+          <p>Total</p>
+          <p class="cartTotalAmount">$20</p>
+        </div>
+        <div class="cartButtons">
+          <button class="buy-btn button">Buy</button>
+          <button class="delete-btn button">Empty Cart</button>
+        </div>
+      </div>
+
+      <!-- Hamburguer Menu -->
+
+      <div class="barsMenu hidden">
+        <div class="closeMenuBtn">
+          <i class="fa-solid fa-circle-xmark"></i>
+        </div>
+        <img
+          class="barsMenuImg"
+          src="/assets/imgs/Japan-Torii-Gate-Background-PNG-Image.png"
+          alt="barsMenu picture"
+        />
+        <div class="linksContainer linksBarsMenu">
+          <ul class="standardList standardListMenu">
+            <li><a href="index.html" class="heroLink" id="home">Home</a></li>
+            <li>
+              <a href="shop.html" class="heroLink" id="shop">Order Delivery</a>
+            </li>
+            <li>
+              <a href="index.html#contactSection" class="heroLink">Contact</a>
+            </li>
+            <li><a href="signUp.html" class="heroLink">Sign Up</a></li>
+            <li><a href="logIn.html" class="heroLink">Log In</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Modal -->
+
+      <div class="modal hidden"></div>
+
+      <!-- Hero -->
+      <section class="section-hero">
+        <h2>Discover our full menu and order your next meal now!</h2>
+      </section>
+
+      <!-- Links e Iconos a las Redes Sociales -->
+      <section class="section-hero">
+        <a href="#" class="heroLink">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="#" class="heroLink">
+          <i class="fa-brands fa-square-facebook"></i>
+        </a>
+        <a href="#" class="heroLink">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+      </section>
+    </main>
+
+    <!-- PRODUCTS SECTION -->
+
+    <section class="section-container section-fullMenu">
+      <h3 class="section-title">Full Menu</h3>
+      <h4 class="section-subtitle">
+        Use the filter buttons below to see only a specific category
+      </h4>
+      <div class="categoryContainer">
+        <div class="categoryCard catActive" data-category="all">
+          <img
+            src="assets/imgs/Japan-Torii-Gate-Background-PNG-Image.png"
+            alt=""
+            class="catImg"
+          />
+          <h4 class="catTitle">All Products</h4>
+        </div>
+        <div class="categoryCard" data-category="ramen">
+          <img
+            src="assets/imgs/png-transparent-ramen-ramen-glass-food-scissors.png"
+            alt=""
+            class="catImg"
+          />
+          <h4 class="catTitle">Ramen</h4>
+        </div>
+        <div class="categoryCard" data-category="veggie">
+          <img src="assets/imgs/pngwing.com.png" alt="" class="catImg" />
+          <h4 class="catTitle">Veggie</h4>
+        </div>
+        <div class="categoryCard" data-category="sushi">
+          <img src="assets/imgs/sushipng.png" alt="" class="catImg" />
+          <h4 class="catTitle">Sushi</h4>
+        </div>
+        <div class="categoryCard" data-category="other">
+          <img
+            src="assets/imgs/fork-and-knife-png-3677.png"
+            alt=""
+            class="catImg"
+          />
+          <h4 class="catTitle">Other</h4>
+        </div>
+        <div class="categoryCard" data-category="drinks">
+          <img src="assets/imgs/teapng.png" alt="" class="catImg" />
+          <h4 class="catTitle">Tea/Drinks</h4>
+        </div>
+      </div>
+      <div class="productsContainer"></div>
+      <div class="pageScrollContainer">
+        <button class="pagButton pageActiveButton" data-page="1">1</button>
+        <button class="pagButton" data-page="2">2</button>
+        <button class="pagButton" data-page="3">3</button>
+        <button class="pagButton" data-page="4">4</button>
+        <button class="pagButton" data-page="5">5</button>
+      </div>
+      <div class="accountBtnContainer">
+        <button class="button confirm-btn">Confirm Purchase</button>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footerContainer">
+        <div class="container2">
+          <h3 class="section-title">日本の食堂</h3>
+          <div class="footerLinksContainer">
+            <a href="#" class="heroLink">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="#" class="heroLink">
+              <i class="fa-brands fa-square-facebook"></i>
+            </a>
+            <a href="#" class="heroLink">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+        <div class="footerLinksContainer otherLinks">
+          <a href="#" class="heroLink">Terms of Use</a>
+          <a href="#" class="heroLink">Suggestions</a>
+          <a href="#" class="heroLink">Japanese Stores</a>
+        </div>
+      </div>
+    </footer>
+
+    <div class="overlay hidden"></div>
+
+    <script src="assets/data.js"></script>
+    <script src="assets/utils.js"></script>
+    <script src="assets/main.js"></script>
+  </body>
+</html>

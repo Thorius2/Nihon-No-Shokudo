@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nihon No Shokudo</title>
+
+    <link rel="stylesheet" href="assets/style.css" />
+
+    <!-- Sirve para agregar el ícono de nuestra página -->
+    <link rel="icon" href="" />
+
+    <!-- AGREGAMOS CDN DE FONT-AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="bodySignUp">
+    <div class="overlay hidden"></div>
+    <main class="main mainMenu signUpMenu">
+      <!-- Header -->
+      <header>
+        <div class="navbar">
+          <h1>Nihon No Shokudo</h1>
+          <div class="linksContainer">
+            <ul class="standardList">
+              <li><a href="index.html" class="heroLink" id="home">Home</a></li>
+              <li>
+                <a href="shop.html" class="heroLink" id="shop"
+                  >Order Delivery</a
+                >
+              </li>
+              <li>
+                <a href="index.html#contactSection" class="heroLink">Contact</a>
+              </li>
+              <li><a href="signUp.html" class="heroLink">Sign Up</a></li>
+              <li><a href="logIn.html" class="heroLink">Log In</a></li>
+            </ul>
+            <div class="cartButton">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <div class="barsMenuButton">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- Cart -->
+
+      <div class="cart hidden">
+        <div class="closeCartBtn">
+          <i class="fa-solid fa-circle-xmark"></i>
+        </div>
+        <h2>Your Cart</h2>
+        <div class="cartContainer"></div>
+        <div class="cartTotal">
+          <p>Total</p>
+          <p class="cartTotalAmount">$20</p>
+        </div>
+        <div class="cartButtons">
+          <button class="buy-btn button">Buy</button>
+          <button class="delete-btn button">Empty Cart</button>
+        </div>
+      </div>
+
+      <!-- Hamburguer Menu -->
+
+      <div class="barsMenu hidden">
+        <div class="closeMenuBtn">
+          <i class="fa-solid fa-circle-xmark"></i>
+        </div>
+        <img
+          class="barsMenuImg"
+          src="/assets/imgs/Japan-Torii-Gate-Background-PNG-Image.png"
+          alt="barsMenu picture"
+        />
+        <div class="linksContainer linksBarsMenu">
+          <ul class="standardList standardListMenu">
+            <li><a href="index.html" class="heroLink" id="home">Home</a></li>
+            <li>
+              <a href="shop.html" class="heroLink" id="shop">Order Delivery</a>
+            </li>
+            <li class="contactLink">
+              <a href="index.html#contactSection" class="heroLink">Contact</a>
+            </li>
+            <li><a href="signUp.html" class="heroLink">Sign Up</a></li>
+            <li><a href="logIn.html" class="heroLink">Log In</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Modal -->
+
+      <div class="modal hidden"></div>
+
+      <!-- Hero -->
+      <section class="section-hero">
+        <h2>
+          Log In into your account and complete your purchase to access our
+          exclusive benefits!
+        </h2>
+      </section>
+
+      <!-- Links e Iconos a las Redes Sociales -->
+      <section class="section-hero">
+        <a href="#" class="heroLink">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="#" class="heroLink">
+          <i class="fa-brands fa-square-facebook"></i>
+        </a>
+        <a href="#" class="heroLink">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+      </section>
+    </main>
+
+    <!-- Sign Up Form Section -->
+
+    <div class="formContainer">
+      <form>
+        <div class="formInputContainer">
+          <label for="emailLog">Email </label>
+          <input type="text" name="emailLog" />
+        </div>
+        <div class="formInputContainer">
+          <label for="passwordLog">Password</label>
+          <input type="text" name="passwordLog" />
+        </div>
+        <p class="forgotPW">Forgot your password?</p>
+        <button class="button signUp-btn">Log In</button>
+      </form>
+
+      <img
+        src="assets/imgs/11-exotic-foods-to-try-in-japan-besides-sushi.webp"
+        alt="signupPhoto"
+        class="logInPic"
+      />
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footerContainer">
+        <div class="container2">
+          <h3 class="section-title">日本の食堂</h3>
+          <div class="footerLinksContainer">
+            <a href="#" class="heroLink">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="#" class="heroLink">
+              <i class="fa-brands fa-square-facebook"></i>
+            </a>
+            <a href="#" class="heroLink">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+        <div class="footerLinksContainer otherLinks">
+          <a href="#" class="heroLink">Terms of Use</a>
+          <a href="#" class="heroLink">Suggestions</a>
+          <a href="#" class="heroLink">Japanese Stores</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/data.js"></script>
+    <script src="assets/utils.js"></script>
+    <script src="assets/main.js"></script>
+  </body>
+</html>
